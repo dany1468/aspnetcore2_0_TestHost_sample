@@ -9,4 +9,7 @@
     <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E2eTestSample\E2eTestSample.csproj" />
+  </ItemGroup>
 </Project>

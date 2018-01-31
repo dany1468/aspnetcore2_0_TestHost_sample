@@ -7,42 +7,29 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Xunit;
 
-namespace E2eTestSampleTest
+namespace E2eTest
 {
-    public class UnitTest1 : IDisposable
+    public class TestUsingWebHostBuilderDirectly
     {
         private readonly TestServer _server;
         private readonly HttpClient _client;
 
-        public UnitTest1()
+        public TestUsingWebHostBuilderDirectly()
         {
-            //string appRootPath = Path.GetFullPath(Path.Combine(
-            //AppContext.BaseDirectory,
-            //"..", "..", "..", "..", "E2eTestSample"));
             var asm = typeof(Startup).Assembly.GetName().Name;
-            //var path = PlatformServices.Default.Application.ApplicationBasePath;
-            //var path = PlatformServices.Default.Application.ApplicationBasePath;
-            //var contentPath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, $@"..\..\..\..\{asm}"));
             string appRootPath = Path.GetFullPath(Path.Combine(
                             AppContext.BaseDirectory,
                             "..", "..", "..", "..", asm));
 
             // Arrange
-            //_server = new TestServer(new WebHostBuilder()
             _server = new TestServer(new WebHostBuilder()
-                                     //.UseKestrel()
                                      .UseContentRoot(appRootPath)
                                      .UseStartup<Startup>());
             _client = _server.CreateClient();
-            //_client.BaseAddress = new Uri("https://localhost:5001");
-        }
-
-        public void Dispose()
-        {
         }
 
         [Fact]
-        public async Task ReturnHelloWorld()
+        public async Task GetHomePage()
         {
             // Act
             var response = await _client.GetAsync("/");

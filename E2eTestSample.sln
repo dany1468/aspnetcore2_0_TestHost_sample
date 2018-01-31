@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2eTestSample", "E2eTestSample\E2eTestSample.csproj", "{AC6548BF-77E4-49C2-BB9D-47AF392F6CED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2eTestSampleTest", "E2eTestSampleTest\E2eTestSampleTest.csproj", "{EAEC23C1-918D-44B7-BFCE-A4EEE2411ACC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2eTest", "E2eTest\E2eTest.csproj", "{EA2174B9-A9CA-4C6E-B044-D686420B5D43}"
 EndProject
 Global
@@ -17,10 +15,6 @@ Global
 		{AC6548BF-77E4-49C2-BB9D-47AF392F6CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC6548BF-77E4-49C2-BB9D-47AF392F6CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC6548BF-77E4-49C2-BB9D-47AF392F6CED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EAEC23C1-918D-44B7-BFCE-A4EEE2411ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAEC23C1-918D-44B7-BFCE-A4EEE2411ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAEC23C1-918D-44B7-BFCE-A4EEE2411ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAEC23C1-918D-44B7-BFCE-A4EEE2411ACC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EA2174B9-A9CA-4C6E-B044-D686420B5D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EA2174B9-A9CA-4C6E-B044-D686420B5D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA2174B9-A9CA-4C6E-B044-D686420B5D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
